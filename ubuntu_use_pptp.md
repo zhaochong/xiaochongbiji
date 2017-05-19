@@ -1,6 +1,6 @@
 安装pptp客户端：
 ```
-sudo apt-get install pptp-linux
+sudo apt-get install pptp-linux -y
 ```
 
 查看网络配置：
@@ -11,7 +11,9 @@ ip route
 ```
 
 初始化一个vpn的连接通道：zcvpn
+```
 sudo pptpsetup --create zcvpn --server vpn.acz.xin --username zhaochong --password 123456 --encrypt --start
+```
 
 启动vpn：
 ```
