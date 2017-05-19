@@ -1,7 +1,7 @@
 
 ### 阿里云机器初始化
 
-新建用户：
+#### 新建用户：
 
 ```
 adduser zhaochong
@@ -15,6 +15,7 @@ usermod -aG sudo zhaochong
 127.0.0.1 localhost host_name
 ```
 
+#### 禁止root用户登录
 修改/etc/ssh/sshd_config文件中的 PermitRootLogin 为 no
 
 重启sshd 服务：
@@ -22,12 +23,12 @@ usermod -aG sudo zhaochong
 service sshd restart
 ```
 
-安装vim插件：
+#### 安装vim插件：
 ```
 wget -qO- https://raw.github.com/ma6174/vim/master/setup.sh | sh -x
 ```
 
-安装oh-my-zsh：
+#### 安装oh-my-zsh：
 ```
 sudo apt-get install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
