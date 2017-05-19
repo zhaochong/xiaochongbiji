@@ -1,5 +1,5 @@
 
-### 阿里云机器禁止root用户登录
+### 阿里云机器初始化
 
 新建用户：
 
@@ -13,7 +13,6 @@ usermod -aG sudo zhaochong
 将机器名称 host_name加入到/etc/hosts 首行：
 ```
 127.0.0.1 localhost host_name
-
 ```
 
 修改/etc/ssh/sshd_config文件中的 PermitRootLogin 为 no
@@ -22,3 +21,15 @@ usermod -aG sudo zhaochong
 ```
 service sshd restart
 ```
+
+安装vim插件：
+```
+wget -qO- https://raw.github.com/ma6174/vim/master/setup.sh | sh -x
+```
+
+安装oh-my-zsh：
+```
+sudo apt-get install zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+
