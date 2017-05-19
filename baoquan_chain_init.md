@@ -10,6 +10,9 @@ http://www.tuicool.com/articles/AnIVJn
 安装docker：
 ```
 sudo apt-get install docker.io -y
+sudo gpasswd -a ${USER} docker
+sudo service docker restart
+newgrp - docker
 docker -v
 ```
 安装docker-compose：
