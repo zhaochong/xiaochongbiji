@@ -27,7 +27,7 @@ sudo apt-get install docker-compose
 ```
 https://golang.org/doc/install
 wget https://storage.googleapis.com/golang/go1.7.5.linux-amd64.tar.gz
-tar -C /usr/local -zxf go1.7.5.linux-amd64.tar.gz
+sudo tar -C /usr/local -zxf go1.7.5.linux-amd64.tar.gz
 ```
 安装完成后，在.zshrc文件中添加：
 ```
