@@ -1,15 +1,21 @@
 安装pptpd：
 ```
-sudo apt-get install pptpd
+sudo apt-get install pptpd -y
 ```
 
-编辑/etc/pptpd.conf,去掉下两行注释：
+```
+sudo vi /etc/pptpd.conf
+```
+去掉下两行注释：
 ```
 localip 192.168.0.1
 remoteip 192.168.0.234-238,192.168.0.245
 ```
 
-编辑/etc/ppp/chap-secrets，添加账户：
+```
+sudo vi /etc/ppp/chap-secrets 
+```
+添加账户：
 ```
 username  pptpd  "password"  *
 ```
@@ -19,13 +25,20 @@ username  pptpd  "password"  *
 sudo service pptpd restart
 ```
 
-编辑/etc/ppp/pptpd-options，去掉下两行注释：
 ```
-8.8.8.8
-8.8.4.4
+sudo vi /etc/ppp/pptpd-options
+```
+添加：
+```
+ms-dns 8.8.8.8
+ms-dns 8.8.4.4
 ```
 
-编辑/etc/sysctl.conf，去掉这行注释：
+
+```
+sudo vi /etc/sysctl.conf
+```
+去掉这行注释：
 ```
 net.ipv4.ip_forward=1 
 ```
@@ -36,7 +49,7 @@ sysctl -p
 
 安装iptables：
 ```
-sudo apt-get install iptables
+sudo apt-get install iptables -y
 ```
 
 开启NAT转发：
