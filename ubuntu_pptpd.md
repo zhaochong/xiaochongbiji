@@ -3,19 +3,13 @@
 sudo apt-get install pptpd -y
 ```
 
-```
-sudo vi /etc/pptpd.conf
-```
-去掉下两行注释：
+编辑/etc/pptpd.conf，去掉下两行注释：
 ```
 localip 192.168.0.1
 remoteip 192.168.0.234-238,192.168.0.245
 ```
 
-```
-sudo vi /etc/ppp/chap-secrets 
-```
-添加账户：
+编辑/etc/ppp/chap-secrets，添加账户：
 ```
 username  pptpd  "password"  *
 ```
@@ -25,20 +19,13 @@ username  pptpd  "password"  *
 sudo service pptpd restart
 ```
 
-```
-sudo vi /etc/ppp/pptpd-options
-```
-添加：
+编辑/etc/ppp/pptpd-options，添加：
 ```
 ms-dns 8.8.8.8
 ms-dns 8.8.4.4
 ```
 
-
-```
-sudo vi /etc/sysctl.conf
-```
-去掉这行注释：
+编辑/etc/sysctl.conf，去掉这行注释：
 ```
 net.ipv4.ip_forward=1 
 ```
