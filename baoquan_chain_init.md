@@ -60,6 +60,7 @@ sudo apt-get install cmake build-essential libboost-all-dev -y
 然后在fabric目录下：
 ```
 cd ~/go/src/github.com/hyperledger/fabric
+git checkout v1.0.0-alpha
 make native
 ```
 如果编译过程中遇到cp报错，使用如下命令解决：
