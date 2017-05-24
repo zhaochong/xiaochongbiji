@@ -2,7 +2,7 @@
 ```
 sudo apt-get install -y build-essential libtool autotools-dev autoconf pkg-config libssl-dev libevent-dev
 sudo apt-get install -y libboost-all-dev
-sudo apt-get install -y libdb4.8-dev libdb4.8++-dev
+sudo apt-get install -y libdb++-dev
 sudo apt-get install -y libminiupnpc-dev
 sudo apt-get install -y libqt4-dev libprotobuf-dev protobuf-compiler
 sudo apt-get install -y libqrencode-dev
