@@ -25,6 +25,14 @@ make
 sudo make install
 ```
 
+### 在.zshrc中加入：
+```
+export PATH=$PATH:/usr/local/bin
+```
+让配置生效：
+```
+source .zshrc
+```
 
 
 
