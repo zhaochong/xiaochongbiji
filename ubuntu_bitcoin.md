@@ -34,5 +34,13 @@ export PATH=$PATH:/usr/local/bin
 source .zshrc
 ```
 
+### 启动钱包服务
+```
+nohup bitcoind -server >log.bitcoind 2>&1 &
+```
 
+### 查看钱包状态
+```
+bitcoin-cli getinfo
+```
 
