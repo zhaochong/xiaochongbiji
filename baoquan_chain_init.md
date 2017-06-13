@@ -70,6 +70,10 @@ make native
 ```
 cp build/bin/chaintool build/docker/gotools/bin/protoc-gen-go
 ```
+如果遇到ltdl.h的报错，安装：
+```
+apt install libltdl3-dev
+```
 编译成功后，在.zshrc文件中添加：
 ```
 export PATH=$PATH:~/go/src/github.com/hyperledger/fabric/build/bin
