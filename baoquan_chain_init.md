@@ -72,7 +72,7 @@ cp build/bin/chaintool build/docker/gotools/bin/protoc-gen-go
 ```
 如果遇到ltdl.h的报错，安装：
 ```
-apt install libltdl3-dev
+sudo apt-get install libltdl3-dev -y
 ```
 编译成功后，在.zshrc文件中添加：
 ```
