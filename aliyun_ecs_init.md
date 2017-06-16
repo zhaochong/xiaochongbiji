@@ -15,6 +15,11 @@ usermod -aG sudo zhaochong
 127.0.0.1 localhost host_name
 ```
 
+如果需要更用户密码：
+```
+passwd zhaochong
+```
+
 #### 禁止root用户登录
 修改/etc/ssh/sshd_config文件中的 PermitRootLogin 为 no
 
