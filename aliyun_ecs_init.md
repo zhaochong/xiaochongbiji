@@ -28,6 +28,11 @@ passwd zhaochong
 service sshd restart
 ```
 
+#### 更新软件库
+```
+sudo apt-get update
+```
+
 #### 安装vim插件：
 ```
 wget -qO- https://raw.github.com/ma6174/vim/master/setup.sh | sh -x
