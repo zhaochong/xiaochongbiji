@@ -40,7 +40,7 @@ wget -qO- https://raw.github.com/ma6174/vim/master/setup.sh | sh -x
 
 #### 安装oh-my-zsh：
 ```
-sudo apt-get install zsh
+sudo apt-get install zsh -y
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
