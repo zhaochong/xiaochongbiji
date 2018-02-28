@@ -1,4 +1,4 @@
- truffle unbox tutorialtoken
+truffle unbox tutorialtoken
 
 npm install zeppelin-solidity
 
