@@ -1,9 +1,13 @@
+npm install truffle 
+truffle -v
+```
+Truffle v4.1.13 - a development framework for Ethereum
+```
 truffle unbox tutorialtoken
-
 npm install zeppelin-solidity
 
+编译合约：
 truffle compile --compile-all
-truffle migrate --network live
 
 部署的时候要开启geth：
 ```
@@ -20,6 +24,12 @@ personal.unlockAccount(acc0, "123456", 150000);
 
 #设置默认账户
 eth.defaultAccount=acc0;
+
+#查看余额
+eth.getBalance(acc0);
 ```
+
+部署合约：
+truffle migrate --network live --reset
 
 
