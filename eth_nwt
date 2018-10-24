@@ -2,3 +2,24 @@ truffle unbox tutorialtoken
 
 npm install zeppelin-solidity
 
+truffle compile --compile-all
+truffle migrate --network live
+
+部署的时候要开启geth：
+```
+geth --identity "honor" --rpc --rpccorsdomain "*" --datadir "/data/ethereum" --port 30303 -rpcapi "db,eth,net,web3,personal" console
+```
+
+同时设置默认账户，并解锁，确保默认账户中有eth余额：
+```
+#新建账户对象
+acc0 = eth.accounts[0];
+
+#解冻钱包
+personal.unlockAccount(acc0, "123456", 150000);
+
+#设置默认账户
+eth.defaultAccount=acc0;
+```
+
+
