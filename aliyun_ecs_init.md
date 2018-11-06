@@ -44,3 +44,39 @@ sudo apt-get install zsh -y
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
+#### 国内服务器，添加github.com相关host:
+```
+192.30.253.118 gist.github.com
+192.30.253.113 github.com
+151.101.88.249 github.global.ssl.fastly.net
+192.30.253.113 github.com
+192.30.253.118 gist.github.com
+192.30.253.119 gist.github.com
+52.216.80.48 github-cloud.s3.amazonaws.com
+54.231.48.40 github-com.s3.amazonaws.com
+192.30.255.112 www.github.com
+192.30.255.113 www.github.com
+52.216.80.48 github-cloud.s3.amazonaws.com
+54.231.40.3 github-com.s3.amazonaws.com
+52.216.20.171 github-production-release-asset-2e65be.s3.amazonaws.com
+52.216.228.168 github-production-user-asset-6210df.s3.amazonaws.com
+192.30.253.118 gist.github.com
+151.101.72.249 global-ssl.fastly.net
+207.97.227.239 github.com
+207.97.227.252 nodeload.github.com
+207.97.227.243 raw.github.com
+204.232.175.78 documentcloud.github.com
+204.232.175.94 gist.github.com
+204.232.175.78 developer.github.com
+207.97.227.252 nodeload.github.com
+207.97.227.243 api.github.com
+204.232.175.78 documentcloud.github.com
+204.232.175.78 developer.github.com
+207.97.227.239 github.com
+207.97.227.252 nodeload.github.com
+207.97.227.243 raw.github.com
+207.97.227.243 api.github.com
+204.232.175.94 gist.github.com
+204.232.175.78 documentcloud.github.com
+192.30.253.120 codeload.github.com
+```
