@@ -44,7 +44,7 @@ sudo apt-get install zsh -y
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
-#### 国内服务器，添加github.com相关host:
+#### 国内服务器，添加github.com相关host，到 /etc/hosts 文件:
 ```
 192.30.253.118 gist.github.com
 192.30.253.113 github.com
