@@ -22,6 +22,7 @@ sudo e2fsck -f /dev/vdb1
 sudo resize2fs /dev/vdb1
 
 sudo mount /dev/vdb1 /data
+```
 
 #### 老的磁盘分区方法，可以忽略
 ```
