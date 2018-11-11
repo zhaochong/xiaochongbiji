@@ -28,6 +28,11 @@ passwd zhaochong
 service sshd restart
 ```
 
+修改 ssh 端口号：
+```
+vi /etc/ssh/sshd_config
+```
+
 #### 更新软件库
 ```
 sudo apt-get update
