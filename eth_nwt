@@ -28,6 +28,7 @@ eth.defaultAccount=acc0;
 #查看余额
 eth.getBalance(acc0);
 ```
+169127890612220000
 
 部署合约：
 truffle migrate --network live --reset
