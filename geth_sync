@@ -34,3 +34,14 @@ undefined
 82e18a8ecba66fbaf6416c0@[::]:30303")
 ```
 
+重新启动geth：
+```
+nohup geth --identity honor --datadir /data/ethereum --port 30303 -rpcapi db,eth,net,web3,personal >log.eth 2>&1 &
+```
+
+命令行链接geth：
+```
+geth attach /data/ethereum/geth.ipc
+```
+
+
