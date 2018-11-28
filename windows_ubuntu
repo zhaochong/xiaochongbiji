@@ -12,11 +12,29 @@ wpa-psk  <your pw>
 ```
 重启机器
 
-进入系统后，如果没有获取到IP：
-```
+进入系统后，执行：
 ifconfig -a
-ifconfig wlp4s0 up
-sudo dhclient wlp4s0
+发现没有找到有线网卡，查了一下：
+
+发现是网卡的问题，解决方案：
+https://ubuntuforums.org/showthread.php?t=2350778
+执行：
+```
+modprobe alx
+echo 1969 e0b1 | sudo tee /sys/bus/pci/drivers/alx/new_id
+```
+之后可以找到有线网卡
+
+再编辑文件 /etc/network/interfaces
+```
+auto enp5s0
+iface enp5s0 inet dhcp
+address 10.32.29.160
+netmask 255.255.254.0
+gateway 10.32.28.1
 ```
 
+重启网络：
+sudo /etc/init.d/networking restart
 
+搞定！
