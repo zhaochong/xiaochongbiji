@@ -12,4 +12,11 @@ wpa-psk  <your pw>
 ```
 重启机器
 
+进入系统后，如果没有获取到IP：
+```
+ifconfig -a
+ifconfig wlp4s0 up
+sudo dhclient wlp4s0
+```
+
 
