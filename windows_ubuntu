@@ -1,0 +1,15 @@
+#### 在windows台式机上安装 ubuntu 操作系统
+
+##### 使用U盘进行安装，安装完成之后 BIOS 的启动方式要改为 legacy
+
+##### 连接无线网络：
+在 /etc/network/interfaces 文件中添加：
+```
+auto wlp4s0
+iface wlp4s0 inet dhcp
+wpa-ssid  <your ssid>
+wpa-psk  <your pw>
+```
+重启机器
+
+
