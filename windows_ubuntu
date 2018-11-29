@@ -34,6 +34,11 @@ netmask 255.255.254.0
 gateway 10.32.28.1
 ```
 
+如果需要，设置dns：
+编辑/etc/resolv.conf
+search wework.com
+nameserver *.*.*.*
+
 重启网络：
 sudo /etc/init.d/networking restart
 
