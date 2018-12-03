@@ -30,9 +30,9 @@ echo 1969 e0b1 | sudo tee /sys/bus/pci/drivers/alx/new_id
 ```
 auto enp5s0
 iface enp5s0 inet dhcp
-address 10.32.29.160
-netmask 255.255.254.0
-gateway 10.32.28.1
+# address 10.32.29.160
+# netmask 255.255.254.0
+# gateway 10.32.28.1
 ```
 
 如果需要，设置dns：
