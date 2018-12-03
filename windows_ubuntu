@@ -14,6 +14,7 @@ wpa-psk  <your pw>
 
 进入系统后，执行：
 ifconfig -a
+lspci -nn
 发现没有找到有线网卡，查了一下：
 
 发现是网卡的问题，解决方案：
@@ -28,7 +29,7 @@ echo 1969 e0b1 | sudo tee /sys/bus/pci/drivers/alx/new_id
 再编辑文件 /etc/network/interfaces
 ```
 auto enp5s0
-iface enp5s0 inet dhcp
+iface enp5s0 inet static
 address 10.32.29.160
 netmask 255.255.254.0
 gateway 10.32.28.1
