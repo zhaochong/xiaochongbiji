@@ -42,6 +42,12 @@ sudo apt-get update
 ```
 wget -qO- https://raw.github.com/ma6174/vim/master/setup.sh | sh -x
 ```
+卸载 jslint.vim：
+```
+rm -rf ./vim/bundle/jslint.vim
+
+:BundleClean
+```
 
 #### 安装oh-my-zsh：
 ```
