@@ -48,6 +48,8 @@ rm -rf ./vim/bundle/jslint.vim
 
 :BundleClean
 ```
+修改.zshrc文件，添加：
+alias vi="vim"
 
 #### 安装oh-my-zsh：
 ```
