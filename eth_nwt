@@ -3,6 +3,8 @@ truffle -v
 ```
 Truffle v4.1.13 - a development framework for Ethereum
 ```
+mkdir token
+cd token
 truffle unbox tutorialtoken
 npm install zeppelin-solidity
 
