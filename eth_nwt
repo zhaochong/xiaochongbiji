@@ -1,4 +1,4 @@
-npm install truffle 
+npm install -g truffle 
 truffle -v
 ```
 Truffle v4.1.13 - a development framework for Ethereum
