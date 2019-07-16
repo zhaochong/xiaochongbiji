@@ -44,3 +44,7 @@ nameserver *.*.*.*
 sudo /etc/init.d/networking restart
 
 搞定！
+
+ubuntu sever 开启无线：
+apt-get install rfkill
+rfkill unblock all
