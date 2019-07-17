@@ -48,3 +48,7 @@ sudo /etc/init.d/networking restart
 ubuntu sever 开启无线：
 apt-get install rfkill
 rfkill unblock all
+
+sudo apt install wpasupplicant
+
+
